@@ -9,27 +9,27 @@ public class InsercaoPlano {
         Scanner scAdm = new Scanner(System.in);
         System.out.println("Digite o ID do administrador: ");
         int adm = scAdm.nextInt();
-
+        
         Scanner scTitulo = new Scanner(System.in);
         System.out.println("Digite o titulo do plano: ");
         String titulo = scTitulo.nextLine();
 
-        if(titulo.contains(";")){
+        while(titulo.contains(";")){
             System.out.println("titulo Invalido!");
             System.out.println("Digite o titulo do plano: ");
             titulo = scTitulo.nextLine();
         }
-
+        
         Scanner scDesc = new Scanner(System.in);
         System.out.println("Digite a descricao do plano: ");
         String desc = scDesc.nextLine();
 
-        if(desc.contains(";")){
+        while(desc.contains(";")){
             System.out.println("Descricao Invalida!");
             System.out.println("Digite a descricao do plano: ");
             desc = scDesc.nextLine();
         }
-
+        
         Scanner scValor = new Scanner(System.in);
         System.out.println("Digite o valor do plano: ");
         double valor = scAdm.nextDouble();
@@ -44,5 +44,9 @@ public class InsercaoPlano {
             System.out.println(id);
         }
         connection.close();
-        }
+        scAdm.close();
+        scValor.close();
+        scTitulo.close();
+        scDesc.close();        
+    }
 }

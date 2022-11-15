@@ -4,8 +4,8 @@ import java.sql.SQLException;
 
 public class CriaConexao {
 
-    public Connection recuperarConexao() throws SQLException{
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/soundpp?useTimezone =true&serverTimezone=UTC", "root", "mysqlroot");
-        return connection; }
-    
+    public Connection recuperarConexao() throws SQLException {
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/soundpp?useTimezone=true&serverTimezone=UTC", "root", "mysqlroot");
+        return connection; 
+    }
 }

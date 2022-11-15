@@ -10,7 +10,7 @@ public class InsercaoAdministrador {
         System.out.println("Digite o nome do administrador: ");
         String nome = scNome.nextLine();
 
-        if(nome.contains(";")){
+        while(nome.contains(";")){
             System.out.println("nome Invalido!");
             System.out.println("Digite o nome do administrador: ");
             nome = scNome.nextLine();
@@ -20,7 +20,7 @@ public class InsercaoAdministrador {
         System.out.println("Digite o cpf do administrador: ");
         String cpf = scCPF.nextLine();
 
-        if(cpf.contains(";")){
+        while(cpf.contains(";")){
             System.out.println("CPF Invalido!");
             System.out.println("Digite o CPF do administrador: ");
             cpf = scCPF.nextLine();
@@ -36,5 +36,7 @@ public class InsercaoAdministrador {
             System.out.println(id);
         }
         connection.close();
-        }
+        scNome.close();
+        scCPF.close();
+    }
 }

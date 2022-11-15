@@ -8,6 +8,7 @@ public class DelecaoPlano {
         Scanner scID = new Scanner(System.in);
         System.out.println("Digite o id do plano: ");
         int id = scID.nextInt();
+        scID.close();
 
         CriaConexao criaConexao = new CriaConexao();
         Connection connection = criaConexao.recuperarConexao();

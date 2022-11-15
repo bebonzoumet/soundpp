@@ -1,5 +1,4 @@
 
-
 public class Plano {
     private String titulo;
     private String descricao;
@@ -9,7 +8,7 @@ public class Plano {
     private int download_disponivel;
     private boolean anuncios;
     
-    Plano(String titulo, String descricao, double cobranca, int playlists_disponivel, boolean download, int download_disponivel, boolean anuncios) {
+    public Plano(String titulo, String descricao, double cobranca, int playlists_disponivel, boolean download, int download_disponivel, boolean anuncios) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.cobranca = cobranca;
