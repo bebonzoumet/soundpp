@@ -6,7 +6,7 @@ public class Usuario {
     private ArrayList<Playlist> playlists;
     private ArrayList<Obra> obras;
 
-    Usuario(String nome, String plano, ArrayList<Playlist> playlists, ArrayList<Obra> obras) {
+    void Usuario(String nome, String plano, ArrayList<Playlist> playlists, ArrayList<Obra> obras) {
         this.nome = nome;
         this.plano = plano;
         this.playlists = playlists;

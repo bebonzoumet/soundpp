@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.sql.Date;
 import java.util.Scanner;
 
-public class Main_atual {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Obra> obras = new ArrayList<>();
         ArrayList<Autor> autores1 = new ArrayList<>();
