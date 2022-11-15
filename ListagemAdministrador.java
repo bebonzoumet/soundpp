@@ -11,8 +11,8 @@ public class ListagemAdministrador {
         ResultSet rst = stm.getResultSet();
         if (resultado) {
         	while (rst.next()){
-            Integer id = rst.getInt("administrador_id"); System.out.println(id);
-            String nome = rst.getString("nome"); System.out.println(nome);
+                Integer id = rst.getInt("administrador_id"); System.out.println(id);
+                String nome = rst.getString("nome"); System.out.println(nome);
         	}
         }
         else {
