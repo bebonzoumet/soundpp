@@ -11,12 +11,12 @@ public class ListagemAdministrador {
         ResultSet rst = stm.getResultSet();
         if (resultado) {
         	while (rst.next()){
-	            Integer id = rst.getInt("administrador_id"); 
-                System.out.println(id);
-                String nome = rst.getString("nome"); 
-                System.out.println(nome);
-                String cpf = rst.getString("cpf");
-                System.out.println(cpf);
+	            	Integer id = rst.getInt("administrador_id"); 
+			System.out.println(id);
+			String nome = rst.getString("nome"); 
+			System.out.println(nome);
+			String cpf = rst.getString("cpf");
+			System.out.println(cpf);
         	}
         }
         else {
