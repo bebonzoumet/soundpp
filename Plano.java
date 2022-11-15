@@ -9,7 +9,7 @@ public class Plano {
     private int download_disponivel;
     private boolean anuncios;
     
-    void Plano(String titulo, String descricao, double cobranca, int playlists_disponivel, boolean download, int download_disponivel, boolean anuncios) {
+    Plano(String titulo, String descricao, double cobranca, int playlists_disponivel, boolean download, int download_disponivel, boolean anuncios) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.cobranca = cobranca;
