@@ -11,7 +11,7 @@ public class InsercaoAdministrador {
         String nome = scNome.nextLine();
 
         while(nome.contains(";")){
-            System.out.println("nome Invalido!");
+            System.out.println("Nome Invalido!");
             System.out.println("Digite o nome do administrador: ");
             nome = scNome.nextLine();
         }
