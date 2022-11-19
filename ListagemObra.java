@@ -13,20 +13,20 @@ public class ListagemObra {
         ResultSet rst = stm.getResultSet();
         if (resultado) {
         	while (rst.next()){
-	        Integer id = rst.getInt("obra_id");
-			System.out.println(id);
-			String titulo = rst.getString("titulo");
-			System.out.println(titulo);
-			String letra = rst.getString("letra");
-			System.out.println(letra);
-            Date lancamento = rst.getDate("data_lancamento");
-            System.out.println(lancamento);
-            Boolean censura = rst.getBoolean("censura");
-            System.out.println(censura);
-            Time duracao = rst.getTime("duracao");
-            System.out.println(duracao);
-            String categoria = rst.getString("categoria");
-            System.out.println(categoria);
+                Integer id = rst.getInt("obra_id");
+                System.out.println(id);
+                String titulo = rst.getString("titulo");
+                System.out.println(titulo);
+                String letra = rst.getString("letra");
+                System.out.println(letra);
+                Date lancamento = rst.getDate("data_lancamento");
+                System.out.println(lancamento);
+                Boolean censura = rst.getBoolean("censura");
+                System.out.println(censura);
+                Time duracao = rst.getTime("duracao");
+                System.out.println(duracao);
+                String categoria = rst.getString("categoria");
+                System.out.println(categoria);
         	}
         }
         else {
