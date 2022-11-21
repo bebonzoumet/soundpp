@@ -12,6 +12,8 @@ public class DelecaoObra {
         CriaConexao criaConexao = new CriaConexao();
         Connection connection = criaConexao.recuperarConexao();
         Statement stm = connection.createStatement();
+        stm.execute("DELETE FROM obra_autor WHERE fk_obra = " + id + ";");
+        stm.execute("DELETE FROM produtor_obra WHERE fk_obra = " + id + ";");
         stm.execute("DELETE FROM Obra WHERE obra_id = " + id + ";");
         Integer linhasModificadas = stm.getUpdateCount(); System.out.println("Quantidade de Linhas Modificadas " + linhasModificadas); connection.close();
         }
